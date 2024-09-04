@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicaciones Distribuidas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="pizza.jpg" alt="Delicious Pizza">
+        </div>
+        <div class="text-container">
+            <h1>GET Request</h1>
+            <p>Explore the different services we offer by clicking the buttons below. Each service provides specific functionality, such as getting the current time, a personalized greeting, the value of π with custom decimals, or a random number within a given range.</p>
+        </div>
+    </div>
+
+    <div class="services-container">
+        <div class="box">
+            <h1>Current Time Service</h1>
+            <p>Click the button to fetch the current time.</p>
+            <button onclick="loadCurrentTime()">Get Current Time</button>
+            <div id="timeResult"></div>
+        </div>
+
+        <div class="box">
+            <h1>Hello Service</h1>
+            <p>Click the button to get a personalized greeting.</p>
+            <input type="text" id="textInputHello" placeholder="Type your name here..." />
+            <button onclick="loadHello()">Get Greeting</button>
+            <div id="helloResult"></div>
+        </div>
+
+        <div class="box">
+            <h1>Pi Service</h1>
+            <p>Click the button to get the value of π with a specified number of decimals.</p>
+            <input type="number" id="textInputPi" placeholder="Decimals..." min="0" />
+            <button onclick="loadPi()">Get Pi Value</button>
+            <div id="piResult"></div>
+        </div>
+
+        <div class="box">
+            <h1>Random Number Service</h1>
+            <p>Click the button to get a random number between the specified range.</p>
+            <input type="number" id="minValue" placeholder="Min value..." />
+            <input type="number" id="maxValue" placeholder="Max value..." />
+            <button onclick="loadRandom()">Get Random Number</button>
+            <div id="randomResult"></div>
+        </div>
+    </div>
+
+    <script>
+        function loadCurrentTime() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                document.getElementById("timeResult").innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "/app/current-time");
+            xhttp.send();
+        }
+
+        function loadHello() {
+            let nameVar = document.getElementById("textInputHello").value;
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                document.getElementById("helloResult").innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "/app/hello?name=" + nameVar);
+            xhttp.send();
+        }
+
+        function loadPi() {
+            let decimals = document.getElementById("textInputPi").value || 2;
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                document.getElementById("piResult").innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "/app/pi?decimals=" + decimals);
+            xhttp.send();
+        }
+
+        function loadRandom() {
+            let min = document.getElementById("minValue").value || 0;
+            let max = document.getElementById("maxValue").value || 1;
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                document.getElementById("randomResult").innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "/app/random?min=" + min + "&max=" + max);
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>
