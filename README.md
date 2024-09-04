@@ -3,7 +3,7 @@
 This project is a Java-based web server that serves HTML pages and static files and provides an Inversion of Control (IoC) framework for building web applications from Plain Old Java Objects (POJOs). It includes custom annotations similar to those in the Spring framework, and it handles both static file requests and RESTful API requests.
 
 
-![Demo GIF](https://github.com/alexandrac1420/Microframeworks_WEB/blob/master/Pictures/gif.gif)
+![Demo GIF](https://github.com/alexandrac1420/Servidores_Aplicaciones/blob/master/Pictures/gif%20(1).gif)
 
 
 ## Getting Started
@@ -133,7 +133,7 @@ Each service's result will be displayed directly on the page in the correspondin
     
 ## Architecture
 
-![Architecture Diagram](https://github.com/alexandrac1420/Microframeworks_WEB/blob/master/Pictures/Arquitectura.png)
+![Architecture Diagram](https://github.com/alexandrac1420/Servidores_Aplicaciones/blob/master/Pictures/Arquitectura.png)
 
 
 ### Overview
@@ -161,7 +161,7 @@ The web server architecture consists of several key components: a browser interf
 
 ## Class Diagram
 
-![Class Diagram](https://github.com/alexandrac1420/Microframeworks_WEB/blob/master/Pictures/diagramaClases.png)
+![Class Diagram](https://github.com/alexandrac1420/Servidores_Aplicaciones/blob/master/Pictures/diagramaClases.png)
 
 ### Overview
 
@@ -257,7 +257,8 @@ This report summarizes the unit tests conducted on the web server project, cover
    - **Verification:** Verified that all requests are handled correctly.
   
    
-   ![image](https://github.com/user-attachments/assets/3de91727-e239-41a0-a73f-81a9ed00a7ab)
+ ![image](https://github.com/user-attachments/assets/1184e116-fcb4-484e-9770-0d829d42d8ca)
+
 
 
 ## Built With
