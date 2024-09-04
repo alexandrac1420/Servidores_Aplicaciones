@@ -94,6 +94,7 @@ You need to install the following tools and configure their dependencies:
 When you access [http://localhost:8080/index.html](http://localhost:8080/index.html), you will be greeted by a webpage that allows you to interact with various services provided by the server. The page is designed with a clean and organized layout, featuring sections for different services, each with their own functionality. Here’s a detailed explanation of what you’ll find and how to use each service:
 
 #### 1. Current Time Service
+![image](https://github.com/user-attachments/assets/a71f3f5a-3b45-4381-bb7d-bb830483ea91)
 
 - **Description:** This section provides the current time.
 - **How to Use:** Click the "Get Current Time" button.
@@ -101,6 +102,8 @@ When you access [http://localhost:8080/index.html](http://localhost:8080/index.h
 - **Notes:** No additional input is required for this service.
 
 #### 2. Hello Service
+![image](https://github.com/user-attachments/assets/e32d1fba-1825-4521-a52b-c2b6d44e7e69)
+![image](https://github.com/user-attachments/assets/c302c266-edcf-48f6-acdd-0594356b2065)
 
 - **Description:** This service returns a personalized greeting based on the name provided.
 - **How to Use:**
@@ -111,6 +114,9 @@ When you access [http://localhost:8080/index.html](http://localhost:8080/index.h
 
 #### 3. Pi Service
 
+![image](https://github.com/user-attachments/assets/0912aa50-48bb-4bc8-9021-921ef73fbde1)
+![image](https://github.com/user-attachments/assets/cded0e19-2462-475a-ac2e-139a573f8a58)
+
 - **Description:** This service returns the value of π (pi) with a specified number of decimal places.
 - **How to Use:**
   - Enter the number of decimal places you want in the input field labeled "Decimals...".
@@ -119,6 +125,8 @@ When you access [http://localhost:8080/index.html](http://localhost:8080/index.h
 - **Default Behavior:** If no number of decimals is provided, the server will default to 2 decimal places (e.g., "3.14").
 
 #### 4. Random Number Service
+![image](https://github.com/user-attachments/assets/2a7ca542-3c37-400f-9b13-8f1240d57de4)
+![image](https://github.com/user-attachments/assets/b17eabd2-d0fb-468e-a121-b4ad4fc00aa4)
 
 - **Description:** This service returns a random number within a specified range.
 - **How to Use:**
